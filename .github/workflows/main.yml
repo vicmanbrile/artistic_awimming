@@ -14,8 +14,5 @@ jobs:
           server: files.000webhost.com
           username: vicmans
           password: ${{ secrets.password }}
-          server-dir: public_html/
-          exclude: |
-              **/.git*
-              **/.git*/**
-              .htaccess
+          server-dir: ./public_html/
+          exclude: .htaccess

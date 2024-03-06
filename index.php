@@ -11,7 +11,7 @@
       <h1>Clasification</h1>
 
       <div class="clasification-groups_container">
-        <h2>Groups 1</h2>
+        <h2>Groups</h2>
         <h3>subgroup</h3>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi

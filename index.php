@@ -170,47 +170,51 @@
     
     <?php
 
-$sql = "SELECT * FROM `events`;";
+      $mysql_user = getenv("mysql_user");
+      $mysql_pass = getenv("mysql_pass");
 
-// Connect to your database (replace with your connection details)
-$conn = mysqli_connect("localhost", "id21963112_vicmans", "Fenian_135", "id21963112_art_swing");
+      $table = "id21963112_art_swing";
 
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
+      $sql = "SELECT * FROM `events`;";
 
-// Execute the query
-$result = mysqli_query($conn, $sql);
+      $conn = mysqli_connect("localhost", $mysql_user, $mysql_pass, $table);
 
-// Check for errors
-if (!$result) {
-  echo "Error: " . mysqli_error($conn);
-} else {
+      // Check connection
+      if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+      }
 
-  echo "<table>";
-  echo "<tr>";
-  // Get field names (assuming you want headers)
-  $fields = mysqli_fetch_fields($result);
-  foreach ($fields as $field) {
-    echo "<th>" . $field->name . "</th>";
-  }
-  echo "</tr>";
+      // Execute the query
+      $result = mysqli_query($conn, $sql);
 
-  // Fetch data as associative array
-  while ($row = mysqli_fetch_assoc($result)) {
-    echo "<tr>";
-    foreach ($row as $key => $value) {
-      echo "<td>" . $value . "</td>";
-    }
-    echo "</tr>";
-  }
+      // Check for errors
+      if (!$result) {
+        echo "Error: " . mysqli_error($conn);
+      } else {
 
-  echo "</table>";
-}
+        echo "<table>";
+        echo "<tr>";
+        // Get field names (assuming you want headers)
+        $fields = mysqli_fetch_fields($result);
+        foreach ($fields as $field) {
+          echo "<th>" . $field->name . "</th>";
+        }
+        echo "</tr>";
 
-// Close connection
-mysqli_close($conn);
+        // Fetch data as associative array
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<tr>";
+          foreach ($row as $key => $value) {
+            echo "<td>" . $value . "</td>";
+          }
+          echo "</tr>";
+        }
+
+        echo "</table>";
+      }
+
+      // Close connection
+      mysqli_close($conn);
 
 ?>
 

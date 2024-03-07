@@ -30,14 +30,14 @@ if (!$result) {
     {
       echo '<div class="item flex h-full flex-col place-content-center text-end">';
       {
-          echo '<h1 class="text-xl">'+ $row["summary"] + '</h1>';
-          echo '<h1>' + $row["location"] + '</h1>';
-          echo '<p class="">' + $row["dtstart"] + '</p>';
+          echo '<h1 class="text-xl">'. $row["summary"] . '</h1>';
+          echo '<h1>' . $row["location"] . '</h1>';
+          echo '<p class="">' . $row["dtstart"] . '</p>';
       }
       echo '</div>';
 
       echo '<div class="grid-row-2 grid text-center">';
-        echo '<img class="w-full p-8" src="' + $row["countryImage"] + '" />';
+        echo '<img class="w-full p-8" src="' . $row["countryImage"] . '" />';
       echo '</div>';
     }
     

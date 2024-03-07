@@ -4,84 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nado sincronizado</title>
-    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="clasification_container">
-      <h1>Clasification</h1>
+  <div id="clasification_container" class="m-0 grid grid-cols-4 bg-[#00FFFF]">
+  <h1 class="col-start-1 col-end-5">Clasification</h1>
 
-      <div class="clasification-groups_container">
-        <h2>Groups</h2>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-      </div>
+  <div class="text-center">
+    <h2>Groups</h2>
+    <h3 class="m-0">subgroup</h3>
+    <p m-0>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+    <h3>subgroup</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+  </div>
 
-      <div class="clasification-groups_container">
-        <h2>Groups</h2>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-      </div>
+  <div class="text-center">
+    <h2>Groups</h2>
+    <h3 class="m-0">subgroup</h3>
+    <p m-0>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+    <h3>subgroup</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+  </div>
 
-      <div class="clasification-groups_container">
-        <h2>Groups</h2>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-      </div>
+  <div class="text-center">
+    <h2>Groups</h2>
+    <h3 class="m-0">subgroup</h3>
+    <p m-0>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+    <h3>subgroup</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+  </div>
 
-      <div class="clasification-groups_container">
-        <h2>Groups</h2>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-        <h3>subgroup</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-          aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet
-          rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat!
-          Adipisci, animi!
-        </p>
-      </div>
-    </div>
+  <div class="text-center">
+    <h2>Groups</h2>
+    <h3 class="m-0">subgroup</h3>
+    <p m-0>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+    <h3>subgroup</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid sit doloribus libero! Quia in reprehenderit dolorem, amet rerum provident nam ipsam, eum quasi, adipisci eveniet omnis quaerat! Adipisci, animi!</p>
+  </div>
+</div>
 
     <!--<video autoplay muted loop>
       <source type="video/mp4" src="https://learning.fina.org/wp-content/uploads/2023/01/duet_element_1.mp4">
@@ -167,56 +127,6 @@
       <li>B - Bonificación</li>
       <li>DD - Grado de dificultad</li>
     </ul>
-    
-    <?php
-
-      $mysql_user = getenv("mysql_user");
-      $mysql_pass = getenv("mysql_pass");
-
-      $table = "id21963112_art_swing";
-
-      $sql = "SELECT * FROM `events`;";
-
-      $conn = mysqli_connect("localhost", $mysql_user, $mysql_pass, $table);
-
-      // Check connection
-      if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-      }
-
-      // Execute the query
-      $result = mysqli_query($conn, $sql);
-
-      // Check for errors
-      if (!$result) {
-        echo "Error: " . mysqli_error($conn);
-      } else {
-
-        echo "<table>";
-        echo "<tr>";
-        // Get field names (assuming you want headers)
-        $fields = mysqli_fetch_fields($result);
-        foreach ($fields as $field) {
-          echo "<th>" . $field->name . "</th>";
-        }
-        echo "</tr>";
-
-        // Fetch data as associative array
-        while ($row = mysqli_fetch_assoc($result)) {
-          echo "<tr>";
-          foreach ($row as $key => $value) {
-            echo "<td>" . $value . "</td>";
-          }
-          echo "</tr>";
-        }
-
-        echo "</table>";
-      }
-
-      // Close connection
-      mysqli_close($conn);
-
-?>
 
   </body>
 </html>

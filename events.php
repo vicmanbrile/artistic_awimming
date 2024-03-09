@@ -7,6 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+
+  <?php require 'navegation.php' ?>
+  <div class="translate-y-20 flex w-full">
+    <div class="w-2/3 m-auto">
 <?php
 
 $mysql_user = getenv("mysql_user");
@@ -30,23 +34,22 @@ if (!$result) {
   echo "Error: " . mysqli_error($conn);
 } else {
 
-  echo "<div>";
+  echo '<div class="flex w-4/5 flex-wrap p-2.5">';
 
   // Fetch data as associative array
   while ($row = mysqli_fetch_assoc($result)) {
-    echo '<div class="grid h-full grid-cols-2 rounded-3xl bg-blue-200">';
-    
+    echo '<div class="grid h-full grid-cols-2 rounded-3xl bg-blue-200 my-3">';
     {
       echo '<div class="item flex h-full flex-col place-content-center text-end">';
       {
-          echo '<h1 class="text-xl">'. $row["summary"] . '</h1>';
-          echo '<h1>' . $row["location"] . '</h1>';
-          echo '<p class="">' . $row["dtstart"] . '</p>';
+        echo '<h1 class="text-xl"> $row["summary"] </h1>';
+        echo '<h1> $row["location"] </h1>';
+        echo '<p class=""> $row["dtstart"] </p>';
       }
       echo '</div>';
 
-      echo '<div class="grid-row-2 grid text-center">';
-        echo '<img class="w-full p-8" src="' . $row["countryImage"] . '" />';
+      echo '<div class="flex justify-center items-center">';
+        echo '<img class="w-3/4 object-contain" src= $row["countryImage"] " />';
       echo '</div>';
     }
     
@@ -60,6 +63,7 @@ if (!$result) {
 mysqli_close($conn);
 
 ?>
-
+</div>
+</div>
 </body>
 </html>

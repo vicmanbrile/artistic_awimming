@@ -49,7 +49,7 @@ if (!$result) {
       echo '</div>';
 
       echo '<div class="flex justify-center items-center">';
-        echo '<img class="w-3/4 object-contain" src='. $row["countryImage"] .'" />';
+        echo '<img class="w-3/4 object-contain" src=' . $row["countryImage"] . '" />';
       echo '</div>';
     }
     

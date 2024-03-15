@@ -1,38 +1,33 @@
 <nav class="relative z-10">
     <div
-      class="container min-w-full h-20 bg-[#FCF7E4] fixed flex justify-between items-center px-4 py-2 mx-auto md:flex-nowrap md:space-x-8"
+      class="container min-w-full h-20 bg-[#839AD3] fixed flex justify-between items-center px-4 py-2 mx-auto md:flex-nowrap md:space-x-8"
     >
       <a href="./" class="flex items-center">
         <img
-          class="h-16 mr-2 text-gray-800"
-          src="./assets/logo.png"
+          class="h-16 mr-2 text-zinc-200"
+          src="./assets/logo.svg"
           alt="logo nadadoras"
         />
-        <p class="text-xl font-bold text-gray-800">Aquart Synchro</p></a
+        <p class="text-xl font-bold text-zinc-200">Aquart Synchro</p></a
       >
 
       <ul class="hidden md:flex space-x-8">
         <li>
-          <a href="./" class="text-gray-700 hover:text-gray-600">Inicio</a>
+          <a href="./" class="text-zinc-200 hover:text-gray-600">Inicio</a>
         </li>
         <li>
-          <a href="./history.php" class="text-gray-700 hover:text-gray-600"
+          <a href="./history.php" class="text-zinc-200 hover:text-gray-600"
             >Historia</a
           >
         </li>
         <li>
-          <a href="./rules.php" class="text-gray-700 hover:text-gray-600"
+          <a href="./rules.php" class="text-zinc-200 hover:text-gray-600"
             >Reglas</a
           >
         </li>
         <li>
-          <a href="./events.php" class="text-gray-700 hover:text-gray-600"
+          <a href="./events.php" class="text-zinc-200 hover:text-gray-600"
             >Eventos</a
-          >
-        </li>
-        <li>
-          <a href="./store.php" class="text-gray-700 hover:text-gray-600"
-            >Tienda</a
           >
         </li>
       </ul>
@@ -105,13 +100,6 @@
             href="./events.php"
             class="text-gray-700 hover:text-gray-600 block py-2"
             >Eventos</a
-          >
-        </li>
-        <li>
-          <a
-            href="./store.php"
-            class="text-gray-700 hover:text-gray-600 block py-2"
-            >Tienda</a
           >
         </li>
       </ul>

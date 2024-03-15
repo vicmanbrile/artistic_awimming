@@ -17,77 +17,55 @@
 
 <div class="translate-y-20">
 
-<div class="m-0  bg-[#00FFFF] md:grid grid-cols-4" >
-<h2 class="col-start-1 col-end-5">Clasificacion</h2>
+  <h2 class="text-center font-bold w-full">Clasificacion</h2>
+  <div class="text-center w-full m-0 md:grid grid-cols-4 min-h-65" >
 
-<h3 class="col-start-1 col-end-5">Grupos y subgrupos</h3>
+    <h3 class="col-start-1 col-end-5 my-4">Grupos y subgrupos</h3>
 
-<div class="text-center">
+    <div class="text-center bg-red-100">
+      <h4>Grupo A (Volando)</h4>
+      <h5 class="m-0">Saltos</h5>
+      <h5 class="m-0">Lanzamiento</h5>
+    </div>
 
-  <h4>Grupo A (Volando)</h4>
-  <p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam
-  doloremque libero optio officiis provident voluptas excepturi dolore
-  corrupti totam odit, expedita ipsum ad ea nemo eos, laborum quae officia.
-  </p>
-  <h5 class="m-0">Saltos</h5>
-  <h5 class="m-0">Lanzamiento</h5>
+    <div class="text-center">
+      <h4>Grupo B (Equilibrio)</h4>
+      <h5 class="m-0">Apilado</h5>
+      <h5 class="m-0">Levantamiento</h5>
+    </div>
 
-</div>
-<div class="text-center">
+    <div class="text-center">
+      <h4>Grupo C (Combinado)</h4>
+      <h5 class="m-0">Encima de un sorporte</h5>
+      <h5 class="m-0">Saltos a un soporte</h5>
+      <h5 class="m-0">Otros (No estan en grupo A, B, P)</h5>
+    </div>
 
-<h4>Grupo B (Equilibrio)</h4>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam
-  doloremque libero optio officiis provident voluptas excepturi dolore
-  corrupti totam odit, expedita ipsum ad ea nemo eos, laborum quae officia.
-</p>
-<h5 class="m-0">Apilado</h5>
-<h5 class="m-0">Levantamiento</h5>
-</div>
+    <div class="text-center">
+      <h4>Grupo P (Plataforma)</h4>
+      <h5 class="m-0">Estandares</h5>
+      <h5 class="m-0">Flotantes</h5>
+    </div>
 
-<div class="text-center">
-<h4>Grupo C (Combinado)</h4>
-<p >
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam
-  doloremque libero optio officiis provident voluptas excepturi dolore
-  corrupti totam odit, expedita ipsum ad ea nemo eos, laborum quae officia.
-</p>
-<h5 class="m-0">Encima de un sorporte</h5>
-<h5 class="m-0">Saltos a un soporte</h5>
-<h5 class="m-0">Otros (No estan en grupo A, B, P)</h5>
-</div>
-
-<div class="text-center">
-<h4>Grupo P (Plataforma)</h4>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam
-  doloremque libero optio officiis provident voluptas excepturi dolore
-  corrupti totam odit, expedita ipsum ad ea nemo eos, laborum quae officia.
-</p>
-<h5 class="m-0">Estandares</h5>
-<h5 class="m-0">Flotantes</h5>
-</div>
-
-</div>
+  </div>
 
 
-<h3>
-  EL ALGORITMO PARA CALCULAR EL GRADO DE DIFICULTAD DE CADA ACROBÁTICO
-  MOVIMIENTO:
-</h3>
-C + D + P + S + R + T + B = DD
+  <h3>
+    EL ALGORITMO PARA CALCULAR EL GRADO DE DIFICULTAD DE CADA ACROBÁTICO
+    MOVIMIENTO:
+  </h3>
+  C + D + P + S + R + T + B = DD
 
-<ul>
-  <li>C - Construcción</li>
-  <li>D - Dirección (solo GRUPO A y C)</li>
-  <li>P - Posición/s</li>
-  <li>S: Área de soporte y tipo de conexión (solo GRUPO B y P)</li>
-  <li>R - Rotación de la base de la construcción (GRUPOS B, C y P)</li>
-  <li>T: El plano y el grado de rotación (solo GRUPOS A y C)</li>
-  <li>B - Bonificación</li>
-  <li>DD - Grado de dificultad</li>
-</ul>
+  <ul>
+    <li>C - Construcción</li>
+    <li>D - Dirección (solo GRUPO A y C)</li>
+    <li>P - Posición/s</li>
+    <li>S: Área de soporte y tipo de conexión (solo GRUPO B y P)</li>
+    <li>R - Rotación de la base de la construcción (GRUPOS B, C y P)</li>
+    <li>T: El plano y el grado de rotación (solo GRUPOS A y C)</li>
+    <li>B - Bonificación</li>
+    <li>DD - Grado de dificultad</li>
+  </ul>
 
 
 </div>

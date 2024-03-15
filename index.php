@@ -53,7 +53,7 @@
 -->
       <div>
         <h1 class="m-0 w-full bg-neutral-800 p-0 text-center text-white">Mayores competencias</h1>
-        <div class="flex w-full flex-col items-center bg-slate-600">
+        <div class="flex w-full flex-col items-center  bg-[#3E599A] ">
         <div class="flex flex-col md:flex-row">
           <button class="px-20 py-8 text-white hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:w-1/2 md:p-10">
             <img class="m-auto h-12" src="https://olympics.com/images/static/b2p-images/logo_color.svg" alt="Juegos Olímpicos" />

@@ -16,30 +16,43 @@
         <div class="w-2/3 m-auto">
             <div class="flex w-4/5 flex-wrap p-2.5">
                 <?php
-
+// Optengo las credenciales que estan guardadas en variables de entorno en el servidor alojado.
 $mysql_user = getenv("mysql_user");
 $mysql_pass = getenv("mysql_pass");
 
+// Establezco datos de la base de datos necesarios.
 $dbName = "id21963112_art_swing";
+
+// Se crea una conexion con la base de datos
 $conn = mysqli_connect("localhost", $mysql_user, $mysql_pass, $dbName);
 
+/*
+Se crea la consulta, me se importante.
+
+Los nombres de las columnas para 
+saber con exacitud de los datos a renderizar.
+*/
 $sql = "SELECT `summary`, `location`, `dtstart`, `countryImage` FROM `events`;";
 
-// Check connection
+/* 
+Revision de la conexion
+si hay error mostrar directamente a el cliente
+no es lo ideal pero es una solucion temporal
+*/
 if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+  die("Conexion fallida: " . mysqli_connect_error());
 }
 
-// Execute the query
+// Ejecucion de la consulta
 $result = mysqli_query($conn, $sql);
 
-// Check for errors
+// Revision y hubo error al hacer la consulta con la misma solucion
 if (!$result) {
   echo "Error: " . mysqli_error($conn);
 } else {
   
   
-  // Fetch data as associative array
+  // Iterar por el resultado y consutir tarjetas que van a renderizar
   while ($row = mysqli_fetch_assoc($result)) {
     echo '<div class="grid h-full grid-cols-2 rounded-3xl bg-blue-200 my-3">';
     {
@@ -56,14 +69,13 @@ if (!$result) {
       echo '</div>';
     }
     
-echo "</div>";
+    echo "</div>";
   }
   
 }
 
-// Close connection
+// Cerrando la conexión
 mysqli_close($conn);
-
 ?>
 
             </div>

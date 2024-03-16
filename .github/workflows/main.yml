@@ -19,3 +19,6 @@ jobs:
             **/.git*
             **/.git*/**
             .htaccess
+            README.md
+            LICENCE
+            readmeAssents/

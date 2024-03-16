@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Aquart Synchro</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
+</head>
 
-  <?php require 'components/navegation.php' ?>
-  <div class="translate-y-20 flex w-full">
-    <div class="w-2/3 m-auto">
-<?php
+<body>
+
+    <?php require 'components/navegation.php' ?>
+    <div class="translate-y-20 flex w-full">
+        <div class="w-2/3 m-auto">
+            <?php
 
 $mysql_user = getenv("mysql_user");
 $mysql_pass = getenv("mysql_pass");
@@ -64,8 +66,9 @@ if (!$result) {
 mysqli_close($conn);
 
 ?>
-</div>
-</div>
-<?php require 'components/footer.php' ?>
+        </div>
+    </div>
+    <?php require 'components/footer.php' ?>
 </body>
+
 </html>

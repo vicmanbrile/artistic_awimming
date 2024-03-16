@@ -14,7 +14,8 @@
     <?php require 'components/navegation.php' ?>
     <div class="translate-y-20 flex w-full">
         <div class="w-2/3 m-auto">
-            <?php
+            <div class="flex w-4/5 flex-wrap p-2.5">
+                <?php
 
 $mysql_user = getenv("mysql_user");
 $mysql_pass = getenv("mysql_pass");
@@ -36,9 +37,8 @@ $result = mysqli_query($conn, $sql);
 if (!$result) {
   echo "Error: " . mysqli_error($conn);
 } else {
-
-  echo '<div class="flex w-4/5 flex-wrap p-2.5">';
-
+  
+  
   // Fetch data as associative array
   while ($row = mysqli_fetch_assoc($result)) {
     echo '<div class="grid h-full grid-cols-2 rounded-3xl bg-blue-200 my-3">';
@@ -56,16 +56,17 @@ if (!$result) {
       echo '</div>';
     }
     
-    echo "</div>";
+echo "</div>";
   }
-
-  echo "</div>";
+  
 }
 
 // Close connection
 mysqli_close($conn);
 
 ?>
+
+            </div>
         </div>
     </div>
     <?php require 'components/footer.php' ?>

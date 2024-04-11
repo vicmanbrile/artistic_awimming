@@ -20,6 +20,9 @@
             <li>
                 <a href="./events.php" class="hover:text-gray-600">Eventos</a>
             </li>
+            <li>
+                <a href="./store.php" class="hover:text-gray-600">Tienda</a>
+            </li>
         </ul>
 
         <div class="hidden md:inline">
@@ -62,6 +65,9 @@
             </li>
             <li>
                 <a href="./events.php" class="text-gray-700 hover:text-gray-600 block py-2">Eventos</a>
+            </li>
+            <li>
+                <a href="./store.php" class="text-gray-700 hover:text-gray-600 block py-2">Tienda</a>
             </li>
         </ul>
         <?php require 'components/usrs.php'?>

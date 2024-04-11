@@ -7,14 +7,13 @@
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Aquart Synchro</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 
 <body>
-
+    <?php session_start() ?>
     <?php require 'components/navegation.php' ?>
     <div class="translate-y-20 min-h-100vh">
-
-
         <div
             class="flex flex-col items-center bg-[url('./assets/pexels-cottonbro-studio-9616277.jpg')] p-10 text-right text-white md:items-end">
             <h1 class="max-w-max text-clip p-2 text-4xl backdrop-brightness-50">Nado sincronizado</h1>

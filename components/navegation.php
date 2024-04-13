@@ -20,7 +20,14 @@
             <li>
                 <a href="./events.php" class="hover:text-gray-600">Eventos</a>
             </li>
+            <li>
+                <a href="./store.php" class="hover:text-gray-600">Tienda</a>
+            </li>
         </ul>
+
+        <div class="hidden md:inline">
+            <?php require 'components/usrs.php'?>
+        </div>
 
         <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-offset-2">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
@@ -59,7 +66,11 @@
             <li>
                 <a href="./events.php" class="text-gray-700 hover:text-gray-600 block py-2">Eventos</a>
             </li>
+            <li>
+                <a href="./store.php" class="text-gray-700 hover:text-gray-600 block py-2">Tienda</a>
+            </li>
         </ul>
+        <?php require 'components/usrs.php'?>
         <button id="close-btn" class="absolute top-4 right-4 focus:outline-none">
             <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">

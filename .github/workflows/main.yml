@@ -8,6 +8,14 @@ jobs:
     steps:
       - name: Get latest code
         uses: actions/checkout@v3
+
+      - name: Copy files with updates
+        uses: actions/upload-artifact@v3
+        with:
+          name: updated-files
+          path: ./public_html/
+          if-exists: update
+          
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:

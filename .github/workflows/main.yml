@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Copy files with updates
+      - name: Copy files with updates  # Assuming you still want to update files
         uses: actions/upload-artifact@v3
         with:
           name: updated-files
@@ -18,13 +18,13 @@ jobs:
           if-exists: update
 
       - name: Sync files
-        uses: webfactory/ftp-deploy@v1.2.3
+        uses: webfactory/ftp-deploy@v1.2.3  # Example action with artifact support
         with:
           server: files.000webhost.com
           username: vicmans
           password: ${{ secrets.password }}
           server-dir: ./public_html/
-          artifacts: ${{ artifacts.updated-files }}
+          artifacts: ${{ artifacts.updated-files }}  # Reference the uploaded artifact
           exclude: |
             **/.git*
             **/.git/**

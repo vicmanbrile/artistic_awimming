@@ -18,13 +18,13 @@ jobs:
           if-exists: update
 
       - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: webfactory/ftp-deploy@v1.2.3
         with:
           server: files.000webhost.com
           username: vicmans
           password: ${{ secrets.password }}
           server-dir: ./public_html/
-          artifact: updated-files
+          artifacts: ${{ artifacts.updated-files }}
           exclude: |
             **/.git*
             **/.git/**

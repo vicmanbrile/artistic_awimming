@@ -10,21 +10,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Copy files with updates  # Assuming you still want to update files
+      - name: Copy files with updates
         uses: actions/upload-artifact@v3
         with:
-          name: updated-files
-          path: ./public_html/
-          if-exists: update
+            name: updated-files
+            path: ./public_html/
+            if-exists: update  # Update existing files
 
-      - name: Sync files
-        uses: webfactory/ftp-deploy@v1.2.3  # Example action with artifact support
+      - name: Sync files  # Remove the artifact parameter
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: files.000webhost.com
           username: vicmans
           password: ${{ secrets.password }}
           server-dir: ./public_html/
-          artifacts: ${{ artifacts.updated-files }}  # Reference the uploaded artifact
           exclude: |
             **/.git*
             **/.git/**

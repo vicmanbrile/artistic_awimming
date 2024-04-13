@@ -1,12 +1,13 @@
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+
 jobs:
   web-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Get latest code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Copy files with updates
@@ -15,7 +16,7 @@ jobs:
           name: updated-files
           path: ./public_html/
           if-exists: update
-          
+
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -23,10 +24,11 @@ jobs:
           username: vicmans
           password: ${{ secrets.password }}
           server-dir: ./public_html/
+          artifact: updated-files
           exclude: |
             **/.git*
-            **/.git*/**
+            **/.git/**
             .htaccess
             README.md
-            LICENCE
+            LICENSE
             readmeAssents/
